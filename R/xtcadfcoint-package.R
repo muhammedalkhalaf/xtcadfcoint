@@ -1,0 +1,55 @@
+#' xtcadfcoint: Panel CADF Cointegration Tests with Structural Breaks
+#'
+#' @description
+#' Implements the panel CADF (Cross-sectionally Augmented Dickey-Fuller)
+#' cointegration tests of Banerjee and Carrion-i-Silvestre (2017). The tests
+#' account for cross-sectional dependence through Common Correlated Effects
+#' (CCE) augmentation following Pesaran (2006), and support structural breaks
+#' in deterministic components.
+#'
+#' @section Main Functions:
+#' \describe{
+#'   \item{\code{\link{xtcadfcoint}}}{Main function for panel CADF
+#'     cointegration testing}
+#'   \item{\code{\link{is_cointegrated}}}{Check if null is rejected at
+#'     given significance level}
+#' }
+#'
+#' @section Model Specifications:
+#' The package supports six model specifications:
+#' \describe{
+#'   \item{Model 0}{No deterministic components}
+#'   \item{Model 1}{Constant only}
+#'   \item{Model 2}{Constant and linear trend}
+#'   \item{Model 3}{Constant with level shifts at breaks}
+#'   \item{Model 4}{Linear trend with level shifts at breaks}
+#'   \item{Model 5}{Linear trend with level and slope shifts at breaks}
+#' }
+#'
+#' @section Test Statistics:
+#' The panel CIPS statistic is the cross-sectional average of individual
+#' CADF t-statistics:
+#' \deqn{CIPS = \frac{1}{N} \sum_{i=1}^{N} t_i}
+#' where \eqn{t_i} is the t-statistic from the individual CADF regression
+#' for unit \eqn{i}.
+#'
+#' @references
+#' Banerjee, A., & Carrion-i-Silvestre, J. L. (2017). Testing for panel
+#' cointegration using common correlated effects estimators.
+#' \emph{Journal of Time Series Analysis}, 38(4), 610--636.
+#' \doi{10.1111/jtsa.12234}
+#'
+#' Pesaran, M. H. (2006). Estimation and inference in large heterogeneous
+#' panels with a multifactor error structure. \emph{Econometrica}, 74(4),
+#' 967--1012. \doi{10.1111/j.1468-0262.2006.00692.x}
+#'
+#' Pesaran, M. H. (2007). A simple panel unit root test in the presence
+#' of cross-section dependence. \emph{Journal of Applied Econometrics},
+#' 22(2), 265--312. \doi{10.1002/jae.951}
+#'
+#' @keywords internal
+"_PACKAGE"
+
+## usethis namespace: start
+## usethis namespace: end
+NULL

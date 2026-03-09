@@ -1,0 +1,41 @@
+Package: xtcadfcoint
+Type: Package
+Title: Panel CADF Cointegration Tests with Structural Breaks
+Version: 1.0.0
+Date: 2026-03-07
+Authors@R: c(
+    person("Muhammad", "Alkhalaf", 
+           email = "muhammedalkhalaf@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-2677-9246")),
+    person("Merwan", "Roudane",
+           role = "ctb",
+           comment = "Original Stata implementation"),
+    person("Anindya", "Banerjee",
+           role = "ctb",
+           comment = "Original methodology"),
+    person("Josep Lluis", "Carrion-i-Silvestre",
+           role = "ctb",
+           comment = "Original methodology"))
+Description: Implements the panel CADF (Cross-sectionally Augmented 
+    Dickey-Fuller) cointegration tests of Banerjee and 
+    Carrion-i-Silvestre (2017) <doi:10.1111/jtsa.12234>. 
+    The tests account for cross-sectional dependence through 
+    Common Correlated Effects (CCE) augmentation following 
+    Pesaran (2006) <doi:10.1111/j.1468-0262.2006.00692.x>. 
+    Supports multiple model specifications including deterministic 
+    components and up to two structural breaks in levels and/or 
+    slopes. Provides individual CADF statistics, panel CIPS 
+    statistics, automatic lag selection via information criteria, 
+    and bootstrap critical value simulation.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports:
+    stats
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown
+RoxygenNote: 7.3.3
