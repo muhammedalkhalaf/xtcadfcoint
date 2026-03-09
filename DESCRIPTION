@@ -29,6 +29,8 @@ Description: Implements the panel CADF (Cross-sectionally Augmented
     statistics, automatic lag selection via information criteria, 
     and bootstrap critical value simulation.
 License: GPL-3
+URL: https://github.com/muhammedalkhalaf/xtcadfcoint
+BugReports: https://github.com/muhammedalkhalaf/xtcadfcoint/issues
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5.0)
