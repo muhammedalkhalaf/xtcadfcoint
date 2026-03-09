@@ -66,7 +66,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Merwan Roudane \email{merwanroudane920@gmail.com} (\href{https://orcid.org/0009-0008-6753-9818}{ORCID})
+\strong{Maintainer}:   
 
 Authors:
 \itemize{
