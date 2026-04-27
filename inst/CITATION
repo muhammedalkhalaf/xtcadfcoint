@@ -1,4 +1,4 @@
-﻿citHeader("To cite xtcadfcoint in publications use:")
+citHeader("To cite xtcadfcoint in publications use:")
 
 bibentry(
   bibtype  = "Manual",
